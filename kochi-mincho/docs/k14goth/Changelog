@@ -1,0 +1,47 @@
+* Mon Jan  8 2001 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.6.9 Released
+  - configure が ash でも機能するようにした
+  - 自己満足程度の些細な漢字部分の修正
+  - ほっときぱなしだったロシア文字のデザインを他の英字デザインと統一
+  - mkitalic の FONTBOUNDINGBOXに関するバグ修正
+
+* Mon Oct  2 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.6.8 Released
+  - いくつかの第1,2水準漢字の調整
+  - 「醢」の他サイズと揃えるためのデザイン修正
+  - --disable-progressbar の追加
+  - fonts.aliasのインストール処理のスクリプト化
+  - その他のconfigure/Makefile, スクリプト類のクリーンアップ
+
+* Mon Sep 18 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.6.7 Released
+  - 失礼や勘違いな文体があったので、ドキュメント類を修正
+
+* Thu Sep 14 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.6.6 Released
+  - いくつかのカタカナのデザインの微調整
+  - 「嘗」、「妹」等のオリジナルk14の誤デザイン修正
+  - 「饗」の他サイズと揃えるためのデザイン修正
+  - bit2bdf の高速化(狩野宏樹様へ感謝します)
+
+* Sun Aug  6 2000 Yasuyuki Furukawa <furukawa@vinelinux.org>
+  - 1.6.5 Released
+  - 第2水準漢字のゴシックライクにするためのデザイン修正
+  - 「蔗」の他サイズと揃えるためのデザイン修正
+  - 任意パスのgawk, Perlへ対応できるようにconfigure.in 周りの書き直し
+  - その他微調整
+
+
+----------------------
+  デザイン修正一覧
+----------------------
+以下はオリジナルのk14フォントから改編したものです.
+
+妹	旁の「未」が「末」になっている
+嘗掌	冠が「学」と同じものになっている
+賜	旁が「昜」になっている
+
+●個人的趣味から手を加えたもの(他のサイズのフォントと同じにした)
+饗	上部真中の「良」
+蔗	「共」の上部になっていたのを「廿」へ
+醢	旁が「塩」と一緒になっていたのを「右」+「皿」へ

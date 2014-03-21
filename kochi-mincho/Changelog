@@ -1,0 +1,15 @@
+Sat Aug  9 01:27:27 2003  KANOU Hiroki  <kanou@khdd.net>
+
+	* PfaEdit のビットマップ圧縮に関するバグ修正
+	* ulCodePageRange の symbol 文字セットビットを立てないように変更
+
+Wed Aug  6 19:05:49 2003  KANOU Hiroki  <kanou@khdd.net>
+
+	* ソースを変更
+	  (Ayu Gothic : 1.0 -> 1.3,
+	   sasage-mono 20030620 -> oradano 20030619)
+	* GSUB テーブルの Coverage フォーマットを 1 に変更
+	  (Windows 2000 で縦書きグリフが使用されないため)
+	* ゴシックに 21 ドットビットマップを追加
+	* ギリシャ文字 (Δ・Ω) の欠落グリフを修正
+	* ulUnicodeRange の計算を改良

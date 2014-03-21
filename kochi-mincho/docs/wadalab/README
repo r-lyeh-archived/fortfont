@@ -1,0 +1,136 @@
+----------- This document is translated by Tilman Binder ------------
+
+In this directory are the kanji-skeletons designed by the
+Wadalab-kanji--commmittee, which can be supplemented to
+gain PostScript Type 1 outline-fonts.
+
+The file-names have the following meaning:
+
+skeleton-font-name:  wadalab-mincho
+JIS first, second type:  -0
+supplement parameter:   -8
+version number:   .4
+
+JIS first-second-type, specifically byo-kamei, hen-kamei writing
+types are stored in the following files:
+
+wadalab-mincho-0-8.?.tar.Z: sai-mincho type  filigree mincho type
+wadalab-mincho-0-12.?.tar.Z: chu-mincho type  medium mincho type
+wadalab-gothic-0-13.?.tar.Z: cho-kaku type  squared gothic type
+wadalab-maru-0-8.?.tar.Z: saimaru type  filigree round type
+
+Each of the files can be, if processed, turned into PostScript.
+All files can be displayed.
+
+The code of the incomplete rows of "JISX208" and alphanumeric letters
+can be found in wadalab-sym.?.tar.Z. 
+
+For the JIS third type kanjis (JISX0212) are momentarily only
+two writing-types available, namely:
+
+wadalab-mincho-1-8.tar.Z:  sai-mincho type         filigree mincho type
+wadalab-maru-1-8.tar.Z:  saimaru type            filigree round type
+
+Concerning the tools to use the fonts, the following are prepared:
+
+1. Conversion programm for Metafont
+
+This can be performed with: tools/wftomf.c
+(wftomf.c was formerly called type1tomf.c)
+Hint information were also considered, during the developpment
+of the Metafont sources.
+
+2. Conversion programm for Type 1 pfa fonts
+
+This can be performed with: tools/wftopfa.c
+If one produces the Familiy Hints of the PFA Files one
+receives only coarse results, as they are
+only a combination of various patterns.
+
+1997/10/8 debugged by Dr H. T. Leung
+
+3. Conversion programm to convert Type 1 pfa fonts to pk fonts
+used with NTT-Nihongo-TeX
+
+This can be performed with: tools/wftodm.c
+With:
+wftodm -FontBase dg jis*.ps goth-*.ps
+one receives dgjk[a-k].pfa files. If the
+conversion is done with the ps2pk programm, one
+receives pk-files of various sizes. The actual version
+has the flaw, that the result does not match the
+FontMatrix, so the japanese characters are shifted upwards.
+
+1997/10/8 debugged by Dr H. T. Leung
+
+4. Conversion programm for BDF Fonts, programm by kuribayash@omron
+
+This can be performed with: tools/bdfmerge.c
+In the commentary of the programm, which was programmed
+by arai@astem,  the method of how to merge is explained.
+16 and 24 BDF Dot Fonts, produced from
+wadalab-mincho-1-8.tar.Z are located in
+the directory ftp/Font/bdf.
+
+5. Conversion programm for writing-style-club-fonts
+
+This can be performed with: tools/wftovf.c
+With:
+wftovf -base min 12 -thresh 15.0 jis*.ps min*.ps
+one receives files called min12.vf1, min12.vf2.
+If the value for -thresh is enlarged, the quality
+deteriorates, because an segment is derived from
+the third Bezier Curves, but the size of the
+resulting file shrinks.
+If MS-DOS and DOS-extender is used you have to
+define MSDOS previous to compiling.
+
+6. Use these fonts as Composite Postscript fonts
+
+  o Make PFA files for each subfonts( as written in 3 ), and put them to
+    the font directory( e.g. /usr/local/lib/ghostscript/4.0/fonts ).
+
+  o Change Font names in `tools/Wadalab-mincho-0-12.ps'
+
+  o Put the file to the font directory, or include the file in Postscript 
+    files.
+
+7. Use with Ghostscript(obsolete)
+
+There is a method to convert to 5 types of
+the writing-style-club-font, but the use
+of PFA Fonts are recomended, that quality
+does not get too bad. The method is descibed in
+the file tools/USAGE.ghostscript. Respectivly
+the translation into English by Mr. Suzuki Shinji of Tokyo
+University in the file tools/USAGE.ghostscript.eng.
+Font and patches can be found in ftp/Font/patches,
+In case lines in the source code of the patches should get
+too long the definitions in the source-code of
+the patches of the file common.h should be
+#define MAXLINELEN 4096
+#define BUFFERSIZE 4096
+as it was pointed out by Mr.
+Aida Shigenobu from Yamagata University.
+
+If you as an individual use the distribution as font as
+such, or convert it, there is no necessity to inform
+the Wadalab group. But in case you redistribute it, we
+request you kindly to forward a note to
+ftp.ipl.t.u-tokyo.ac.jp
+with the additional information of what has been altered.
+At that location we also plan to store the upgrade,
+to give the user the possibility to receive always
+the latest version.
+
+In case you want to point out mistakes in the outline
+of Kanjis or are not satisfied with the poor design,
+please do not hesitate to contact
+tanaka@ipl.t.u-tokyo.ac.jp
+---------------------------------
+
+It took the Wadalab-kanji--commmittee from April 1990 until
+March 1992 to put all main and minor parts of Kanjis, as well
+as the necessary accessories, together. (Right now something
+like the Wadalab does not exist.)
+

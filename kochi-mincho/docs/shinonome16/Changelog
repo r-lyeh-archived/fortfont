@@ -1,0 +1,59 @@
+●Changelog
+* Thu Feb  8 2001 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.0.4 Released
+  - 明朝の"吐"が"瞬"に化けていたので、修正(Thanks to 狩野宏樹さん)
+
+* Mon Jan  8 2001 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.0.3 Released
+  - 自己満足程度の些細な明朝漢字の修正
+  - mkitalic の FONTBOUNDINGBOXに関するバグ修正
+
+* Fri Oct 20 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.0.2 Released
+  - Metric情報をおかしくしていたので訂正
+
+* Thu Oct 12 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.0.1 Released
+  - configure が ash でも機能するようにした
+  - しんにょうのデザインの変更
+  - resx, resy を 75に 統一
+
+* Sun Oct  8 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 1.0 Released
+  - 第2水準漢字完了
+  - 第2水準漢字の明朝書体用への修正
+  - オリジナル jiskan16に倣っていた誤デザインの修正
+    (安岡版 jiskan16を参考に (http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/ftp/fonts))
+  - 『震』で凡ミスしていたので、修正
+  - ライセンスを Public Domain へ。
+
+* Mon Oct  2 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 0.3
+  - 第2水準漢字作成の推進(残り350文字)
+  - スクリプトの整理
+
+* Thu Sep 28 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 0.2.1  (致命的なバグを修正)
+  - Makefile, configure 周りのミスを修正
+  - 半角カナの文字集合がLatin1と同一になっていたので訂正
+  - フォントエイリアスが無効になっていたので追加
+
+* Sun Sep 24 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 0.2 リリース(様子見3)
+  - Latin1の大文字デザインの修正(上向いていた重心を中央へ)
+  - 第1水準漢字の微調整。
+  - 第2水準漢字製作の推進(約75%)
+
+* Sun Sep 17 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 0.1 リリース(様子見2)
+  - 第2水準漢字製作の推進(約50%)
+  - 平仮名、第1水準漢字の微調整。
+  - bit2bdf の高速化(Thanks to 狩野宏樹さん)
+
+* Sun Sep 9 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 0.0 リリース(様子見として‥‥)
+  - Latin1, 半角 作業終了
+  - 第1水準漢字終了(明朝、ゴシック)
+
+* Wed Aug 2 2000 Yasuyuki Furukawa <Furukawa.Yasuyuki@fujixerox.co.jp>
+  - 12ドットフォントの区切りがついた頃、開始。
