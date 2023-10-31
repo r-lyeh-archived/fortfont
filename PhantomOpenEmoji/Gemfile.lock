@@ -1,14 +1,21 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    cairo (1.12.6)
-      pkg-config
+    cairo (1.17.12)
+      native-package-installer (>= 1.0.3)
+      pkg-config (>= 1.2.2)
+      red-colors
     gdk_pixbuf2 (2.0.2)
       glib2 (= 2.0.2)
     glib2 (2.0.2)
       pkg-config
-    pkg-config (1.1.4)
-    rmagick (2.13.2)
+    matrix (0.4.2)
+    native-package-installer (1.1.8)
+    pkg-config (1.5.5)
+    red-colors (0.3.0)
+      matrix
+    rmagick (5.3.0)
+      pkg-config (~> 1.4)
     rsvg2 (2.0.2)
       cairo (>= 1.10.0)
       gdk_pixbuf2 (= 2.0.2)
